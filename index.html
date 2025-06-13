@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecWiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/superloguinho.png">
+    <!-- Font Awesome para as setas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logona">
+                <a href="index.html">
+                    <img src="img/loguinho.png" alt="logo">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>TecWiki</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="quemSomos.html">Quem somos</a></li>
+                    <li class="dropdown">
+                        <a href="instituicoes.html">Instituições</a>
+                        <div class="dropdown-content">
+                            <div class="submenu-section">
+                                <h4>Parceiros</h4>
+                                <a href="https://cedup.edu.br/" target="_blank">CEDUP Industrial</a>
+                                <a href="https://www.ceduprenatoramos.com.br/" target="_blank">CEDUP Renato Ramos</a>
+                                <a href="https://www.ifsc.edu.br/" target="_blank">IFSC</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="cursos.html">Cursos</a>
+                        <div class="dropdown-content">
+                            <div class="submenu-section">
+                                <h4>Técnicos</h4>
+                                <a href="cursos.html">Eletrônica</a>
+                                <a href="cursos.html">Eletrotécnica</a>
+                                <a href="cursos.html">Mecânica</a>
+                                <a href="cursos.html">Edificações</a>
+                                <a href="cursos.html">Eletromecânica</a>
+                            </div>
+                            <div class="submenu-section">
+                                <h4>Saúde</h4>
+                                <a href="cursos.html">Enfermagem</a>
+                                <a href="cursos.html">Saúde Bucal</a>
+                                <a href="cursos.html">Segurança do Trabalho</a>
+                            </div>
+                            <div class="submenu-section">
+                                <h4>Gestão & TI</h4>
+                                <a href="cursos.html">Administração</a>
+                                <a href="cursos.html">Contabilidade</a>
+                                <a href="cursos.html">Desenvolvimento de Sistemas</a>
+                                <a href="cursos.html">Informática</a>
+                            </div>
+                            <div class="submenu-section">
+                                <h4>Outros</h4>
+                                <a href="cursos.html">Alimentos</a>
+                                <a href="cursos.html">Biotecnologia</a>
+                                <a href="cursos.html">Química</a>
+                                <a href="cursos.html">Transações Imobiliárias</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Menu mobile hamburger -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- Menu mobile -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="quemSomos.html">Quem somos</a></li>
+                <li class="mobile-dropdown">
+                    <a href="instituicoes.html">Instituições <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <a href="https://cedupindustrialdelages.com.br/" target="_blank">CEDUP Industrial</a>
+                        <a href="https://ceduprenatoramos.com.br/" target="_blank">CEDUP Renato Ramos</a>
+                        <a href="https://www.ifsc.edu.br/" target="_blank">IFSC</a>
+                    </div>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="cursos.html">Cursos <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <div class="mobile-submenu-section">
+                            <h5>Técnicos</h5>
+                            <a href="cursos.html">Eletrônica</a>
+                            <a href="cursos.html">Eletrotécnica</a>
+                            <a href="cursos.html">Mecânica</a>
+                            <a href="cursos.html">Edificações</a>
+                            <a href="cursos.html">Eletromecânica</a>
+                        </div>
+                        <div class="mobile-submenu-section">
+                            <h5>Saúde</h5>
+                            <a href="cursos.html">Enfermagem</a>
+                            <a href="cursos.html">Saúde Bucal</a>
+                            <a href="cursos.html">Segurança do Trabalho</a>
+                        </div>
+                        <div class="mobile-submenu-section">
+                            <h5>Gestão & TI</h5>
+                            <a href="cursos.html">Administração</a>
+                            <a href="cursos.html">Contabilidade</a>
+                            <a href="cursos.html">Desenvolvimento de Sistemas</a>
+                            <a href="cursos.html">Informática</a>
+                        </div>
+                        <div class="mobile-submenu-section">
+                            <h5>Outros</h5>
+                            <a href="cursos.html">Alimentos</a>
+                            <a href="cursos.html">Biotecnologia</a>
+                            <a href="cursos.html">Química</a>
+                            <a href="cursos.html">Transações Imobiliárias</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Área do Carrossel -->
+        <div class="containerImage">
+            <h2 id="carousel-title">Administração</h2>
+            <div class="carousel-wrapper">
+                <img id="carousel-image" src="img/administração.jpg" alt="Administração">
+            </div>
+            <!-- Navegação do carrossel com setas -->
+            <div class="carousel-dots">
+                <div id="dot-left" class="dot arrow-left" onclick="prevSlide()">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div id="dot-active" class="dot active-dot"></div>
+                <div id="dot-right" class="dot arrow-right" onclick="nextSlide()">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="cursos">
+            <h2>Confira os Seguintes Cursos</h2>
+            <hr>
+            <h2>Oferecido Pelas Instituições</h2>
+        </div>
+
+        <div class="cursosOferecidos">
+            <div class="linhaTopo">
+                <h2>Cursos Disponíveis</h2>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Administração</h3>
+                <h3>Edificações</h3>
+                <h3>Segurança do Trabalho</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Alimentos</h3>
+                <h3>Eletromecânica</h3>
+                <h3>Técnico em Eletrônica</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Biotecnologia</h3>
+                <h3>Enfermagem</h3>
+                <h3>Técnico em Eletrotécnica</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Contabilidade</h3>
+                <h3>Informática</h3>
+                <h3>Técnico em Mecânica</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Desenvolvimento de Sistemas</h3>
+                <h3>Química</h3>
+                <h3>Transações Imobiliárias</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3></h3>
+                <h3>Saúde Bucal</h3>
+                <h3></h3>
+            </div>
+        </div>
+
+        <!-- Seção de Instituições Parceiras -->
+        <div class="instituicao">
+            <h2>Instituições Parceiras</h2>
+            <img id="institution-image" src="img/colegio (1).jpeg" alt="CEDUP Industrial Lages">
+            <div class="instituicaoParceiras">
+                <span id="inst-1" class="inst-name active-inst">CEDUP Industrial Lages</span>
+                <span id="inst-2" class="inst-name">CEDUP Renato Ramos da Silva</span>
+                <span id="inst-3" class="inst-name">IFSC (Instituto Federal de Santa Catarina)</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos os Direitos Reservados para Equipe Cedup || 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

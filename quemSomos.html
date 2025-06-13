@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #000;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            position: relative;
+            border-bottom: 3px solid white;
+            /* Linha branca mais fina abaixo do header */
+        }
+        
+        .menu-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        .submenu {
+            display: none;
+            position: absolute;
+            left: 20px;
+            top: 60px;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .submenu a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 5px;
+        }
+        
+        .submenu a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            width: 80%;
+            margin: 50px auto 0;
+            /* Espaço entre o header e o FAQ */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* Centraliza o conteúdo */
+        }
+        
+        .faq {
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+            /* Garante centralização do texto */
+            margin-top: 2rem;
+            border-bottom: 2px solid white;
+            padding-bottom: 1rem;
+            cursor: pointer;
+        }
+        
+        .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .question h3 {
+            font-size: 1.8rem;
+        }
+        
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+        }
+        
+        .faq.active .answer {
+            max-height: 300px;
+            animation: fade 1s ease-in-out;
+        }
+        
+        .faq.active svg {
+            transform: rotate(180deg);
+        }
+        
+        svg {
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-top: 3px solid white;
+            /* Linha branca mais fina acima do footer */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <h1>Quem Somos</h1>
+        <div class="submenu" id="submenu">
+            <a href="index.html">Voltar à Página Principal</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="faq">
+            <div class="question">
+                <h3>Quem somos?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+        </svg>
+            </div>
+            <div class="answer">
+                <p>Somos a execução prática de um trabalho de conclusão de curso (TCC), voltado para o incentivo à educação técnico-profissional lageana. Nosso nome "Tecwiki" faz referência à Wikipedia, devido ao fato de utilizarmos principalmente conexões
+                    entre links, assim como a enciclopédia colaborativa. <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia" style="color: white; text-decoration: underline;">Saiba mais!</a></p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>O que é esse site?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+        </svg>
+            </div>
+            <div class="answer">
+                <p>É um site que tem como objetivo conectar todas as informações sobre os cursos técnicos gratuitos na modalidade subsequente da cidade de Lages em um só lugar, otimizando e facilitando o acesso à informação e à educação profissional.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>O que são cursos subsequentes?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+        </svg>
+            </div>
+            <div class="answer">
+                <p>Os cursos subsequentes são cursos técnicos de nível médio oferecidos aos estudantes que já concluíram o ensino médio. Acesse o link abaixo e confira todas as oportunidades!<br>
+                    <a href="cursos.html" style="color: white; text-decoration: underline;">Saiba mais!</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Tecwiki Lages</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var submenu = document.getElementById("submenu");
+            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+        }
+
+        // Alternar a visualização das respostas na FAQ com clique
+        const faqs = document.querySelectorAll('.faq');
+        faqs.forEach(faq => {
+            faq.addEventListener('click', () => {
+                faq.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
